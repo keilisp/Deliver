@@ -4,19 +4,23 @@
 
 
 /*спецификация*/
+*
+	padding: 0
+	margin: 0
 body
 	box-sizing: border-box
 	overflow-x: hidden
-	color: $textcl
-	font-family: $text-font
+	color: 
+	font-family: 
 	font-weight: 400
 	line-height: 1.6
 	font-size: 16px
-	padding: 0
-	margin: 0
+	
 
 ul,li
 	list-style-type: none
+	margin: 0
+	padding: 0
 
 a
 	text-decoration: none
@@ -29,10 +33,456 @@ a
 	display: block
 
 
+/******HEADER*****/
 
+.page-wrapper
+	header
+		.slider-wrapper
+			position: absolute
+			width: 100%
+			top: 0
+			left: 0
+			span
+				font-size: 60px
+		.container
+			.head
+				padding-top: 40px
+				.col-lg-2
+					h1
+						color: $white
+						font-family: $logo-font
+						font-size: 2.5rem
+						font-weight: 400
+						text-align: left
+				.social-links
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					align-items: center
+					justify-content: flex-end
+					ul
+						display: -webkit-flex
+						display: -moz-flex
+						display: -ms-flex
+						display: -o-flex
+						display: flex
+						flex-direction: row
+						align-items: center
+						li
+							margin-right: 10px
+							div
+								display: -webkit-flex
+								display: -moz-flex
+								display: -ms-flex
+								display: -o-flex
+								display: flex
+								align-items: center
+								justify-content: center
+								background: $white
+								border-radius: 50%
+								width: 30px
+								height: 30px
+								opacity: .6
+								&:hover
+									opacity: 1
+									cursor: pointer
+								a
+									color: #655c51
+									i
+										font-size: 15px
+				.line
+					hr
+						margin-top: 30px
+						background-color: white
+						width: 100%
+			nav
+				padding-bottom: 180px
+				.row
+					padding-top: 15px
+					.menu
+						ul
+							display: -webkit-flex
+							display: -moz-flex
+							display: -ms-flex
+							display: -o-flex
+							display: flex
+							justify-content: flex-start
+							li
+								a
+									margin-right: 40px
+									color: $white								
+									font-family: $grand-font
+									font-size: 1.125rem
+									font-weight: 100
+									line-height: 1.125rem
+									&.active
+										color: #87b672
+									&:hover
+										color: #87b672
+			.offer
+				padding-bottom: 177px
+				.checkout
+					text-align: center
+					h2
+						color: $white
+						font-family: $grand-font
+						font-size: 2.25rem
+						font-weight: 400
+						line-height: 1.5rem
+						margin-bottom: 40px
+						span
+							color: #54a668
+					h5
+						color: $white
+						font-family: $default-font
+						font-size: 1.375rem
+						font-weight: 400
+						line-height: 1.125rem
+						margin-bottom: 50px
+					button
+						border-radius: 0%
+						padding: 10px 20px
+						border: 2px solid white
+						color: $white
+						font-family: $grand-font
+						font-size: 0.875rem
+						font-weight: 400
+						line-height: 1.125rem
+						text-transform: uppercase
+						&:hover
+							color: #87b672
 
+	.n-1
+		.container
+			.small-team
+				padding-top: 60px
+				.col-lg-12
+					text-align: center
+					h2
+						color: #666262
+						font-family: $grand-font
+						font-size: 1.375rem
+						font-weight: 400
+						line-height: 1.5rem
+						margin-bottom: 25px
+					p
+						color: #9b9999
+						margin: 0 auto
+						padding: 0 140px
+						font-family: $default-font
+						font-size: 1rem
+						font-weight: 400
+						line-height: 1.5rem
+						margin-bottom: 45px
+				.col-lg-12
+					hr
+						background-color: #cccccc
+						width: 100%
+		.services
+			padding-top: 60px
+			padding-bottom: 60px
+			text-align: center
+			.col-lg-4
+				i
+					font-size: 80px
+					color: #b9b7b7
+					margin-bottom: 30px
+				h6
+					color: #666262
+					font-family: $grand-font
+					font-size: 1.125rem
+					font-weight: 400
+					line-height: 1.375rem
+					margin-bottom: 25px
+				p
+					color: #9b9999
+					font-family: $default-font
+					font-size: 1rem
+					font-weight: 400
+					line-height: 1.5rem
+					margin-bottom: 30px
+				a
+					color: #87b672
+					font-family: $default-font
+					font-size: 1rem
+					font-weight: 400
+					line-height: 1.5rem
+					&:hover
+						text-decoration: underline
 
+	.n-2
+		background: #efefef
+		.container
+			.latest-work
+				padding-top: 60px
+				text-align: center
+				padding-bottom: 50px
+				.col-lg-12
+					
+					h2
+						color: #666262
+						font-family: $grand-font
+						font-size: 1.375rem
+						font-weight: 400
+						line-height: 1.5rem
+						margin-bottom: 25px
+					p
+						padding: 0 140px
+						color: #9b9999
+						font-family: $default-font
+						font-size: 1rem
+						font-weight: 400
+						line-height: 1.5rem
+						margin: 0 auto
+			.row
+				padding-bottom: 40px
+				text-align: center
+				.works
+					.work	
+						position: relative
+						&:hover
+							i
+								display: block
+						img
+							margin-bottom: 20px
+						a
+							i
+								position: absolute
+								top: 65px
+								left: 155px
+								display: none
+								font-size: 50px
+								opacity: .75 
+								color: #464c52
+								&:hover
+									opacity: 1
+					h3
+						color: #666262
+						font-family: $grand-font
+						font-size: 1.125rem
+						font-weight: 400
+						line-height: 1.5rem
 
+	.n-3
+		.container
+			.what-you-see
+				padding-top: 60px
+				text-align: center
+				padding-bottom: 50px
+				.offer
+					h2
+						color: #666262
+						font-family: $grand-font
+						font-size: 1.375rem
+						font-weight: 400
+						line-height: 1.5rem
+						margin-bottom: 25px
+					p
+						margin: 0 auto
+						padding: 0 140px
+						color: #9b9999
+						font-family: $default-font
+						font-size: 1rem
+						font-weight: 400
+						line-height: 1.5rem
+						padding-bottom: 20px
+					button
+						width: 7.313rem
+						height: 2.5rem
+						border-radius: 0%
+						background: #87b672
+						border: none
+						color: $white
+						font-family: $grand-font
+						font-size: 0.875rem
+						font-weight: 400
+						line-height: 1.125rem
+						text-transform: uppercase
+						&:hover
+							color: #87b672
+							background: $white
+							border: 1px solid #87b672
 
+	#footer
+		background: #333333
+		.container
+			hr
+				background-color: $white
+				width: 105%
+			.row
+				padding-top: 60px
+				padding-bottom: 40px
+				.col-lg-5
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					flex-wrap: wrap
+					justify-content: space-between
+					align-items: center
+					h1
+						color: $white
+						font-family: $logo-font
+						font-size: 2.5rem
+						font-weight: 400
+						text-align: left
+					ul
+						display: -webkit-flex
+						display: -moz-flex
+						display: -ms-flex
+						display: -o-flex
+						display: flex
+						flex-direction: row
+						align-items: center
+						li
+							margin-right: 10px
+							div
+								display: -webkit-flex
+								display: -moz-flex
+								display: -ms-flex
+								display: -o-flex
+								display: flex
+								align-items: center
+								justify-content: center
+								background: $white
+								border-radius: 50%
+								width: 30px
+								height: 30px
+								opacity: .6
+								&:hover
+									opacity: 1
+									cursor: pointer
+								a
+									color: #655c51
+									i
+										font-size: 15px
+					p
+						padding-top: 56px
+						color: #9b9999
+						font-family: $default-font
+						font-size: 0.875rem
+						font-weight: 400
+						line-height: 1.5rem
+						margin-bottom: 50px
 
+				.contact-info
+					h3
+						margin: 0
+						color: #fefefe
+						font-family: $grand-font
+						font-size: 1.125rem
+						font-weight: 400
+						line-height: 1.5rem
+					ul
+						padding-top: 30px
+						li
+							margin-bottom: 5px
+							color: #9b9999
+							font-family: $default-font
+							font-size: 0.875rem
+							font-weight: 400
+							line-height: 1.5rem
+							span
+								color: #fefefe
+								font-family: $grand-font
+								font-size: 1rem
+								font-weight: 400
+								line-height: 1.5rem
+							&.mail
+								margin: 20px 0
+
+				.links
+					h3
+						margin: 0
+						color: #fefefe
+						font-family: $grand-font
+						font-size: 1.125rem
+						font-weight: 400
+						line-height: 1.5rem
+					ul
+						padding-top: 30px
+						li
+							margin-bottom: 5px
+							font-family: $default-font
+							font-size: 0.875rem
+							font-weight: 400
+							line-height: 1.5rem
+							i
+								color: white
+							a
+								color: #9b9999
+								&:hover
+									text-decoration: underline
+
+				.newsletter
+					h3
+						margin: 0
+						color: #fefefe
+						font-family: $grand-font
+						font-size: 1.125rem
+						font-weight: 400
+						line-height: 1.5rem
+					p
+						margin-top: 30px
+						width: 13rem
+						height: 2.313rem
+						color: #9b9999
+						font-family: $default-font
+						font-size: 0.875rem
+						font-weight: 400
+						line-height: 1.5rem
+					form
+						display: -webkit-flex
+						display: -moz-flex
+						display: -ms-flex
+						display: -o-flex
+						display: flex
+						flex-direction: row
+						padding-top: 30px
+						input
+							width: 10rem
+							height: 2.5rem
+							background-color: #4e4c4c
+							border: none
+							color: $white
+							border-radius: 0%
+							margin-right: 5px !important
+						button
+							width: 3.313rem
+							height: 2.5rem
+							background-color: #828282
+							border-radius: 0%
+							color: #fefefe
+							font-family: $grand-font
+							font-size: 0.875rem
+							font-weight: 400
+							line-height: 1.5rem
+							text-transform: uppercase
+
+			.copyright
+				padding-top: 10px
+				padding-bottom: 0 
+				.col-lg-4
+					p
+						color: #808080
+						font-family:grand-font
+						font-size: 0.75rem
+						font-weight: 400
+						line-height: 1.125rem
+						text-transform: uppercase
+						span
+							color: #cbcbcb
+				.col-lg-3
+					p
+						color: #808080
+						font-family: $grand-font
+						font-size: 0.75rem
+						font-weight: 400
+						line-height: 1.125rem
+						text-transform: uppercase
+						a
+							color: #808080
 @import "media" // Always at the end
